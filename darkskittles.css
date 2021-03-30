@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+  font-family: "notMyType";
+  src: url("fonts/notMyType.otf");
+}
 
 html {
   min-width: 100%;
@@ -91,34 +97,28 @@ body {
 .homeContainer h1{
   text-align: center;
   text-decoration: underline;
-  font-size: 30px;
+  font-size: 45px;
+  font-family: 'Syne Mono', monospace;
 }
   
-.homeContainer {
-  border: 2px solid black;
-  border-radius: 29px 10px 37px 10px;
-  margin: 0px auto;
-  text-align: center;
-}
 
 .homeContainer { 
   width: 650px;
-  height: 360px;
+  height: 390px;
   position: relative;
   margin: 1px auto;
   margin-bottom: 10px;
-  background-color: white;
-  border: 2px solid grey;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 10px 5px 10px 5px;
-  background-color: white;
   text-align: left;
-  /* overflow: scroll; */
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(1, 57, 94, 0.753) 6%, rgb(255, 230, 230) 89%, rgba(0,0,0,0.8939950980392157) 100%);
 }
 
 .homeContainer li {
-  font-size: 14px;
-  left: 
+  font-size: 16px;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .homeContainer h2 {
@@ -126,9 +126,10 @@ body {
 }
 
 .homeContainer h3 {
-  font-size: 13px;
+  font-size: 16px;
+  margin: 5px;
+  color: black;
 }
-
 
 .rawrxD {
   display: inline-block;
@@ -183,37 +184,27 @@ body {
   background: linear-gradient(to bottom left, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
 }
   
-
-  
-.gamesTitle {
-  border: 2px solid black;
-  border-radius: 29px 10px 37px 10px;
-  height: 80px;
-  width: 20%;
-  position: relative;
-  margin: 5px auto;
-  text-align: center;
-  background: rgba(236, 1, 121, 1.0);
-  background: -webkit-linear-gradient(top right, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-  background: -moz-linear-gradient(top right, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-  background: linear-gradient(to bottom left, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-}
-
 .weedGameContainer {
   font-size: 15px;  
-  width: 625px;
-  height: 610px;
+  width: 735px;
+  height: 560px;
   margin: 1px auto;
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(37,212,20,0.9094012605042017) 6%, rgba(20,121,212,0.9374124649859944) 89%, rgba(0,0,0,0.8939950980392157) 100%);
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(182, 40, 40, 0.909) 6%, rgba(20,121,212,0.9374124649859944) 89%, rgba(0,0,0,0.8939950980392157) 100%);
 }
   
 .weedGameContainer h1 {
   font-size: 40px;
+  font-family: 'Syne Mono', monospace;
+}
+
+.weedGameContainer p {
+  padding: 5px;
+  font-size: 25px;
 }
     
 .weedGameContainer .game {
@@ -229,7 +220,7 @@ body {
 .weedGameContainer .game .forest {
   margin-top: 0px;
   height: 470px;
-  width: 620px;
+  width: 720px;
   border-radius: 10px;
 }
     
@@ -243,17 +234,59 @@ body {
     
 .weedGameContainer .game .leaf {
   position: absolute;
-  top: 390px;
-  left: 380px;
+  top: 275px;
+  left: 120px;
   z-index: 1;
   transition: max-height 750ms linear 200ms; 
   max-height: 50px;
 }
     
 .weedGameContainer .game .leaf:hover {
-  max-height: 190px;
+  max-height: 130px;
 }  
-  
+
+.weedGameContainer .jellyfish {
+  opacity: 0.09;
+}
+   
+.weedGameContainer .jellyfish:hover {
+ opacity: 1.0;
+}
+   
+.weedGameContainer .game .jellyfish {
+ position: absolute;
+ top: 400px;
+ left: 200px;
+ z-index: 1;
+ transition: max-height 750ms linear 200ms; 
+ max-height: 50px;
+}
+   
+.weedGameContainer .game .jellyfish:hover {
+ max-height: 130px;
+}  
+
+.weedGameContainer .fish1 {
+  opacity: 0.08;
+}
+   
+.weedGameContainer .fish1:hover {
+ opacity: 1.0;
+}
+   
+.weedGameContainer .game .fish1 {
+ position: absolute;
+ top: 390px;
+ left: 380px;
+ z-index: 1;
+ transition: max-height 750ms linear 200ms; 
+ max-height: 50px;
+}
+   
+.weedGameContainer .game .fish1:hover {
+ max-height: 100px;
+}  
+
 .panel-title {
   padding: 5px 5px 0px 5px;
   margin-bottom: -5px;  
@@ -305,7 +338,8 @@ body {
 }
 
 .animeGalleryGames {
-  display: block;
+  display: inline-block;
+  text-align: center;
   margin: 10px auto;
   border: 2px black;
   border-radius: 10px;
@@ -389,19 +423,24 @@ body {
 .contact {
   border: 2px solid black;
   border-radius: 10px;
-  height: 250px;
+  height: 180px;
+  padding: 10px;
   width: 480px;
   background: white;
   margin: 0px auto;
   text-align: center;
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(201, 12, 144, 0.952) 6%, rgba(36, 196, 4, 0.795) 89%, rgba(0,0,0,0.8939950980392157) 100%);
 }
 
 .contact h1{
   text-decoration: underline;
+  font-family: "notMyType";
+  padding-bottom: 15px;
 }
 
 .contact a {
   text-decoration: none;
+  color: rgb(42, 187, 245);
 }
 
   
@@ -481,24 +520,78 @@ body {
 
 
 .codeGallery {
-  display: block;
-  height: 640px;
-  width: 790px;
+  height: 790px;
+  width: 1200px;
   margin: 5px auto;
-  color: white;
-  background: black;
+  color: rgb(253, 253, 253);
+  background: linear-gradient(27deg, rgb(0, 0, 0) 0%, rgba(161, 0, 113, 0.909) 6%, rgba(40, 226, 3, 0.815) 89%, rgba(0,0,0,0.8939950980392157) 100%);
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
 }
 
+.codeGallery h2{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 540px;
+  background: rgb(251, 255, 251);
+  color: black;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'Syne Mono', monospace;
+}
+
 .codeGallery img {
   display: block;
-  height: 500px;
-  width: 750px;
+  height: 670px;
+  width: 1150px;
   border: 2px solid black;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.projects {
+  display: block;
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(182, 40, 139, 0.909) 6%, rgba(2, 74, 138, 0.87) 89%, rgba(0,0,0,0.8939950980392157) 100%);
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 350px;
+  text-align: left;
+  margin: 10px auto;
+  font-family: "notMyType";
+  src: url("fonts/notMyType.otf")
+  
+}
+
+.projects ol {
+  margin-left: 35px;
+  color: black;
+  margin-top: 10px;
+}
+
+
+
+.projects h2 {
+  color: rgba(139, 255, 168, 0.884);
+  text-align: center;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.884);
+  padding: 5px;
+  font-family: 'Syne Mono', monospace;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.projects li {
+  font-family: "notMyType";
+  font-size: larger;
 }
 
 
