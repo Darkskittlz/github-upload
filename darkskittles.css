@@ -528,11 +528,11 @@ body {
 	}
 
 .codeGallery {
-  height: 790px;
-  width: 1200px;
+  height: 1020px;
+  width: 1010px;
   margin: 5px auto;
   color: rgb(253, 253, 253);
-  background: linear-gradient(27deg, rgb(0, 0, 0) 0%, rgba(161, 0, 113, 0.909) 6%, rgba(40, 226, 3, 0.815) 89%, rgba(0,0,0,0.8939950980392157) 100%);
+  background: linear-gradient(27deg, rgb(0, 0, 0) 0%, rgba(161, 0, 113, 0.909) 6%, rgba(3, 144, 226, 0.815) 89%, rgba(0,0,0,0.8939950980392157) 100%);
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
@@ -554,8 +554,6 @@ body {
 
 .codeGallery img {
   display: block;
-  height: 670px;
-  width: 1150px;
   border: 2px solid black;
   border-radius: 5px;
   margin: 0 auto;
