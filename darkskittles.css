@@ -424,13 +424,13 @@ body {
 .contact {
   border: 2px solid black;
   border-radius: 10px;
-  height: 180px;
+  height: 120px;
   padding: 10px;
   width: 480px;
   background: white;
   margin: 0px auto;
   text-align: center;
-  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(201, 12, 144, 0.952) 6%, rgba(36, 196, 4, 0.795) 89%, rgba(0,0,0,0.8939950980392157) 100%);
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(201, 12, 144, 0.952) 6%, rgba(10, 113, 121, 0.795) 89%, rgba(0,0,0,0.8939950980392157) 100%);
 }
 
 .contact h1{
