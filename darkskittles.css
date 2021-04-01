@@ -569,7 +569,6 @@ body {
   text-align: left;
   margin: 10px auto;
   src: url("fonts/notMyType.otf")
-  
 }
 
 .projects ol {
@@ -609,6 +608,21 @@ a:hover {
   background-color: rgba(3, 2, 3, 0.301);
   padding: 2px;
 }
+
+.dewaltButton {
+  background: black;
+  margin: 0px auto;
+  text-decoration: none;
+  display: block;
+  margin-top: 71px;
+  width: 160px;
+}
+
+.dewaltButton a {
+  color: n;
+  font-family: "Syne Mono";
+}
+
 
 .footer {
   display: block;
