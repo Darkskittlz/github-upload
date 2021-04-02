@@ -519,13 +519,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	.codeGallery {
-	/* The file size of this background image is 93% smaller
-	to improve page load speed on mobile internet connections */
-	background-image: url("img/franxbg3.jpg");
-		}
-	}
+
 
 .codeGallery {
   margin: 5px auto;
@@ -534,8 +528,8 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
-  width: 700px; 
-  height: 600px;
+  width: 1050px; 
+  height: 1000px;
 }
 
 .codeGallery h2{
@@ -552,10 +546,17 @@ body {
   font-family: 'Syne Mono', monospace;
 }
 
+
+@media (max-width:767px){
+  .codeGallery .codeIMG  {
+    width: 200px; // new width for screen <768px
+    height: 200px; // new height for screen <768px
+  }
+ }
+
 .codeGallery .codeIMG {
   display: inline-grid;
-  height: 81%;
-  width: 84%;
+
   margin: 0px;
   border-radius: 5px;
   overflow: hidden;
