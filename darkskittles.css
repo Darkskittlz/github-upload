@@ -534,7 +534,8 @@ body {
   border: 2px solid black;
   border-radius: 10px;
   text-align: center;
-  width: 600px; 
+  width: 880px; 
+  height: 600px;
 }
 
 .codeGallery h2{
@@ -551,13 +552,13 @@ body {
   font-family: 'Syne Mono', monospace;
 }
 
-.codeIMG {
-  display: block;
-  border: 2px solid blac;
-  border-radius: 5px;
-  margin: 0 auto;
-  height: 84%;
+.codeGallery .codeIMG {
+  display: inline-grid;
+  height: 81%;
   width: 84%;
+  margin: 0px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .projects {
@@ -577,8 +578,6 @@ body {
   color: black;
   margin-top: 10px;
 }
-
-
 
 .projects h2 {
   color: rgba(139, 255, 168, 0.884);
