@@ -519,7 +519,12 @@ body {
 	}
 }
 
-
+@media (max-width:767px){
+  .codeGallery  {
+    width: 765px; /* new width for screen <768px*/
+    height: 650px; /* new height for screen <768px*/
+  }
+ }
 
 .codeGallery {
   margin: 5px auto;
@@ -549,8 +554,8 @@ body {
 
 @media (max-width:767px){
   .codeGallery .codeIMG  {
-    width: 200px; // new width for screen <768px
-    height: 200px; // new height for screen <768px
+    width: 760px; /* new width for screen <768px*/
+    height: 740px; /* new height for screen <768px*/
   }
  }
 
