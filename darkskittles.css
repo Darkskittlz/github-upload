@@ -19,11 +19,11 @@ body {
   font-family: Source Sans Pro;
   background-color: black;
   background-image: url("img/franxbg3.jpg");
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 1892px;
 }
 
 
@@ -402,9 +402,11 @@ body {
   overflow: hidden;
 }
 
-.wrapper3 {
-  min-height: 550px;
-  margin-bottom: -50px;
+.footer video {
+  display: block;
+  text-align: center;
+  width: 600px;
+  margin: 0px auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -640,13 +642,12 @@ a:hover {
 
 
 
-footer video{
+.footer {
   display: block;
-  height: 400px;
-  margin: 5px auto;
-  bottom: 0;
+  margin: 480px 0px auto;
   left: 35%;
   right: 65%;
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -656,6 +657,7 @@ footer video{
   display: inline-block;
   height: 300px;
   width: 300px;
+  margin: 0px auto;
 		}
 	}
   
