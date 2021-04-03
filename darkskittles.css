@@ -18,7 +18,7 @@ html {
 body {
   font-family: Source Sans Pro;
   background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("img/franxbg3.jpg");
+  background-image: url("img/franxbg3.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -519,15 +519,6 @@ body {
 	}
 }
 
-
-.codeGallery {
-  margin: 5px auto;
-  color: rgb(253, 253, 253);
-  text-align: center;
-  width: 1050px; 
-  height: 1000px;
-}
-
 .codeGallery h2{
   border: 2px solid black;
   border-radius: 10px;
@@ -544,16 +535,20 @@ body {
 
 .codeIMG {
   display: block;
-  border: 2px solid black;
-  border-radius: 5px;
   overflow: hidden;
+  margin: 0px auto;
+  height: 800px;
+  width: 900px;
 }
+
 
 @media only screen and (max-width: 767px) {
 	.codeIMG {
 	/* The file size of this background image is 93% smaller
 	to improve page load speed on mobile internet connections */
 	background-image: url("img/codeHTML.png");
+  height: 500px;
+  width: 600px;
 		}
 	}
 
