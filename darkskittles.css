@@ -519,16 +519,6 @@ body {
 	}
 }
 
-<<<<<<< HEAD
-
-=======
-@media (max-width:767px){
-  .codeGallery  {
-    width: 765px; /* new width for screen <768px*/
-    height: 650px; /* new height for screen <768px*/
-  }
- }
->>>>>>> f01dbb0d8fe9ca5d44e0ca54a8d723e5679bb0c7
 
 .codeGallery {
   margin: 5px auto;
