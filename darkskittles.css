@@ -28,7 +28,7 @@ body {
 
 
 #sidebar {
-  position: absolute;
+  position: fixed;
   width: 250px;
   height: 100%;
   background: black;
@@ -150,6 +150,11 @@ body {
   width: 100%;
 }
 
+.wrapper2 {
+  min-height: 420px;
+  margin-bottom: 10px;
+}
+
 .animeGalleryHome img{
   display: inline-grid;
   height: 250px;
@@ -159,18 +164,7 @@ body {
   overflow: hidden;
 }
   
-.differenceTitle {
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 27%;
-  position: relative;
-  margin: 5px auto;
-  text-align: center;
-  background: rgba(236, 1, 121, 1.0);
-  background: -webkit-linear-gradient(top right, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-  background: -moz-linear-gradient(top right, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-  background: linear-gradient(to bottom left, rgba(236, 1, 121, 1.0), rgba(255, 255, 255, 1.0));
-}
+
   
 .contactTitle {
   border: 2px solid black;
@@ -341,7 +335,7 @@ body {
 .animeGalleryGames {
   display: inline-block;
   text-align: center;
-  margin: 10px auto;
+  margin: 4px auto;
   border: 2px black;
   border-radius: 10px;
   height: 270px;
@@ -352,7 +346,6 @@ body {
   display: inline-block;
   height: 260px;
   width: 370px;
-  margin: 5px;
   border-radius: 10px;
   overflow: scroll;
 }
@@ -397,6 +390,17 @@ body {
 
 }
 
+.discordChat {
+  display: block;
+  margin: 0px auto;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.discordWrap {
+  width: 100%;
+}
+
 .animeChatroom {
   display: inline-block;
   text-align: center;
@@ -415,11 +419,12 @@ body {
   overflow: hidden;
 }
 
-.discordChat {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
+.wrapper3 {
+  min-height: 400px;
+  margin-bottom: -50px;
 }
+
+
 
 .contact {
   border: 2px solid black;
@@ -474,6 +479,10 @@ body {
   margin: 0px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.wrapper4 {
+  min-height: 670px;
 }
 
 
@@ -541,6 +550,15 @@ body {
   width: 900px;
 }
 
+.wrapper {
+  min-height: 299px;
+  margin-bottom: 10px;
+}
+
+
+.footer .push {
+  height: 50px;
+}
 
 @media only screen and (max-width: 767px) {
 	.codeIMG {
@@ -615,19 +633,23 @@ a:hover {
 }
 
 
-.footer {
+.wrapper5 {
+  min-height: 820px;
+}
+
+
+
+footer video{
   display: block;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  margin: 0px auto;
-  left: 0;
+  height: 400px;
+  margin: 5px auto;
   bottom: 0;
-  padding: 5px;
+  left: 35%;
+  right: 65%;
 }
 
 @media only screen and (max-width: 767px) {
-	.footer video{
+	footer video{
 	/* The file size of this background image is 93% smaller
 	to improve page load speed on mobile internet connections */
   display: inline-block;
