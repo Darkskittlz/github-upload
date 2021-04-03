@@ -424,13 +424,13 @@ body {
 .contact {
   border: 2px solid black;
   border-radius: 10px;
-  height: 180px;
+  height: 120px;
   padding: 10px;
   width: 480px;
   background: white;
   margin: 0px auto;
   text-align: center;
-  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(201, 12, 144, 0.952) 6%, rgba(36, 196, 4, 0.795) 89%, rgba(0,0,0,0.8939950980392157) 100%);
+  background: linear-gradient(27deg, rgba(0,0,0,0.8645833333333334) 0%, rgba(201, 12, 144, 0.952) 6%, rgba(10, 113, 121, 0.795) 89%, rgba(0,0,0,0.8939950980392157) 100%);
 }
 
 .contact h1{
@@ -519,19 +519,30 @@ body {
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+@media (max-width:767px){
+  .codeGallery  {
+    width: 765px; /* new width for screen <768px*/
+    height: 650px; /* new height for screen <768px*/
+  }
+ }
+>>>>>>> f01dbb0d8fe9ca5d44e0ca54a8d723e5679bb0c7
 
 .codeGallery {
   margin: 5px auto;
   color: rgb(253, 253, 253);
   text-align: center;
+  width: 1050px; 
+  height: 1000px;
 }
 
 .codeGallery h2{
   border: 2px solid black;
   border-radius: 10px;
   padding: 5px;
-  width: 540px;
+  width: 560px;
   background: rgb(251, 255, 251);
   color: black;
   font-size: 20px;
@@ -545,7 +556,7 @@ body {
   display: block;
   border: 2px solid black;
   border-radius: 5px;
-  margin: 0 auto;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
@@ -573,8 +584,6 @@ body {
   color: black;
   margin-top: 10px;
 }
-
-
 
 .projects h2 {
   color: rgba(139, 255, 168, 0.884);
