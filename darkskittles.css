@@ -626,5 +626,15 @@ a:hover {
   padding: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+	.footer {
+	/* The file size of this background image is 93% smaller
+	to improve page load speed on mobile internet connections */
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 0px auto;
+		}
+	}
   
   
